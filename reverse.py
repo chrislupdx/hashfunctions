@@ -1,31 +1,29 @@
+
+# def number_to_letter(number):
+# # does modulo return the first or last character?
+#     remainder = int(number) % 83
+#     number = int(number)
+#     print(letters.index(remainder)
+#     thing = (number - remainder) / 83
+
+multiplier = 83
+h = 9
 numberinput = '35502317995'
+remainder = ""
 letters = "acdekilmnoprstuy"
-letters_to_numbers = enumerate(letters)
-# print(letters_to_numbers)
+def number_to_letter_one(numberinput, letters):
+    print("OG numberinput is "+ str(numberinput))
+    remainder = int(numberinput) % 83
+    print("remainder is " + str(remainder))
+    numberinput = (int(numberinput) - int(remainder))/83
+    print("numberinput after r is removed = "+ str(numberinput))
+    def number_to_letter_one(self, numberinput, letters):
+        if numberinput == 9:
+            print("finished")
+            return
+    print("boom")
+    return number_to_letter_one(numberinput, letters)
+# letters.index()
 
-def number_to_letter(number):
-# does modulo return the first or last character?
-    remainder = int(number) % 83
-    number = int(number)
-    print(remainder)
-    word = (number - remainder) / 83
-
-
-ret_val = number_to_letter(numberinput)
+ret_val = number_to_letter_one(numberinput)
 print(ret_val)
-assert ret_val == cloud
-
-
-    # for x in range(len(number)):
-    # h = ((h / 83) - letters.index(number[x]))
-
-
-
-
-    # the_string = (the_string-remainder)/83
-
-
-#     return h
-# assert ret_val == cloud
-# h = 9
-# for x in range(len(the_string)):
