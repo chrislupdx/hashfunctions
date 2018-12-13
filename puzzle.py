@@ -1,8 +1,9 @@
 # writing the hash function out in python was straight forward enought
 letterinput = 'cloud'
 numberinput = '35502317995'
-
 key = "acdekilmnoprstuy"
+
+
 def letter_to_number(the_string):
     h = 9
     multiplier = 83
